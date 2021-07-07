@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700;800&display=swap');
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #212227;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(4, 370px);
+    grid-template-rows: 900px 500px repeat(2,515px) 900px 515px 605px;
+       grid-template-areas: 
+       "zero zero zero zero"
+       "one one two two"
+       "three four five six"
+       "seven seven eight nine"
+       "ten elewen elewen elewen"
+       "twelve twelve thirteen thirteen"
+       "fourteen fourteen fourteen fourteen";
+        .zero{
+            grid-area: zero;
+            padding: 365px 211px ;
+            background:url(../src/img/logo.png) 210px 80px no-repeat,url(../src/img/blue.png) center;
+            .text{
+                width:600px;
+                height: 280px;
+                margin-bottom: 280px;
+                h1{
+                    font-size: 72px;
+                    font-weight: 300;
+                    letter-spacing: -0.025em;
+                    margin: 0 0 25px 0;
+                }
+                h2{
+                    font-size: 30px;
+                    font-weight: 300;
+                    letter-spacing: -0.025em;
+                    margin: 0;
+                    span{
+                    font-weight: 700;
+                    }
+                } 
+            }
+       }
+        .one{
+            grid-area: one;
+        }
+        .two{
+            grid-area: two;
+            background-color:#f3f1ef;
+            .text{
+                padding: 113px 0 120px 55px;
+                width:500px;
+                h3{
+                    font-size: 24px;
+                    line-height: 1.2;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #666666;
+                    margin: 0 0 38px 0;
+                }
+                h4{
+                    font-family: 'Fira Sans';
+                    font-size: 36px;
+                    font-weight: 300;
+                    letter-spacing: -0.025em;
+                    color: #666666;
+                    margin: 0 0 120px 0;
+                }
+            }
+        }
+        .three{
+            grid-area: three;
+            img{
+                width: 100%;
+                height: 100%;
+            }        
+        }
+        .four{
+            grid-area: four;
+            img{
+                width: 100%;
+                height: 100%;
+            }        
+        }
+        .five{
+            grid-area: five;
+            img{
+                width: 100%;
+                height: 100%;
+            }        
+        }
+        .six{
+            grid-area: six;
+            img{
+                width: 100%;
+                height: 100%;
+            }        
+        }
+        .seven{
+            grid-area: seven;
+            background-color: #3f729b;
+            padding: 80px 0 118px 212px;
+            .text{
+                width: 500px;
+                
+                h3{
+                    font-size: 36px;
+                    line-height: 1.2;
+                    font-weight: 300;
+                    letter-spacing: -0.025em;
+                    color: #f9f9f9;
+                    margin: 0 0 42px 0;
+                }
+                h4{
+                    font-size: 36px;
+                    line-height: 1.2;
+                    font-weight: 300;
+                    letter-spacing: -0.025em;
+                    color: #f9f9f9;
+                    margin: 0 0 37px 0;
+                }
+                button{
+                    width: 280px;
+                    height: 56px;
+                    border: 1.9px solid #ffffff;
+                    border-radius: 28px;
+                    background: none;
+                    font-size: 18px;
+                    line-height: 1.2;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2em;
+                    color: #f9f9f9;
+                }
+            }
+        }
+        .eight{
+            grid-area: eight;
+            img{
+                width: 100%;
+                height: 100%;
+            }        
+        }
+        .nine{      
+            grid-area: nine; 
+            background-color: #3f729b;
+        }
+        .ten{
+            grid-area: ten;
+            background-color: #282b2f;
+        }
+        .elewen{
+            grid-area: elewen;
+            background: url(../src/img/earphone.png);
+            .text{
+                padding: 140px 0 0 58px;
+                width: 370px;
+                height: 500px;
+                background-color: #212227;
+                h3{
+                    font-size: 22px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #2ebd59;
+                    margin: 0 0 40px 0;
+                }
+                .subtext{
+                    font-size: 14px;
+                    line-height: 21px;
+                    font-weight: 400;
+                    color: #f9f9f9;
+                    margin: 0 0 50px 0;
+                }
+                button{
+                    width: 176px;
+                    height: 49px;
+                    border: 2px solid #2ebd59;
+                    border-radius: 24.5px;
+                    background: none;
+                    font-size: 18px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #2ebd59;
+                }
+            }
+        }
+        .twelve{
+            grid-area: twelve;
+            background-color: #2ebd59;
+            padding: 130px 0 140px 180px;
+            h3{
+                font-size: 24px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #f9f9f9; 
+                margin: 0 0 43px 0;    
+            }
+            .subtext{
+                font-size: 36px;
+                line-height: 1.2;
+                font-weight: 300;
+                letter-spacing: -0.025em;
+                color: #f9f9f9;
+                margin: 0 0 38px 0;
+            }         
+            button{
+                width: 280px;
+                height: 56px;
+                border: 1.9px solid #ffffff;
+                border-radius: 28px;
+                background: none;
+                font-size: 18px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                color: #f9f9f9;
+            }  
+        }
+        .thirteen{
+            grid-area: thirteen;    
+            background-color: #282b2f;
+            padding: 130px 0 140px 180px;
+         h3{
+                font-size: 24px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #f9f9f9;
+                margin: 0 0 43px 0;    
+            }
+            .subtext{
+                font-size: 36px;
+                line-height: 1.2;
+                font-weight: 300;
+                letter-spacing: -0.025em;
+                color: #f9f9f9;
+                margin: 0 0 38px 0;
+            }         
+            button{
+                width: 280px;
+                height: 56px;
+                border: 1.9px solid #ffffff;
+                border-radius: 28px;
+                background: none;
+                font-size: 18px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                color: #f9f9f9;
+            }      
+        }
+        .fourteen{
+            grid-area: fourteen;          
+            background-color: #212227;
+            display: flex;
+            justify-content: space-around;
+            padding: 100px 0 125px 0;
+            h4{
+                font-size: 18px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #f9f9f9;
+            }
+            .text{
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 300;
+                color: #919191;
+            }
+            .amazing_life{
+                width:280px;
+                height: 400px;
+                .dog{
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+                .all_rights{
+                    text-transform: uppercase;
+                }
+            }
+            .contact_folow{
+                width: 180px;
+                height: 350px;
+                .subtext{
+                    margin-bottom: 43px;
+                }
+                
+            }
+            .subscribe_sponsor{
+                width: 480px;
+                height: 380px;
+                input{
+                    width: 480px;
+                    height: 60px;
+                    background-color: #555658;
+                    &::placeholder{
+                        color: #a2a2cc;
+                    }
+                }
+                .subtext2{
+                    display: flex;
+                    justify-content: space-between;
+                    .logo{
+                        padding-top: 30px;
+                        width: 80px;
+                        height: 80px;
+                        border: 1px solid #f4f8fb;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+}
