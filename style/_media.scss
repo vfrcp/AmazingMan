@@ -1,0 +1,77 @@
+@media (min-width: 1601px){
+    .container{
+        width:1800px
+    }
+    .two{
+        .text{
+            margin: 0 auto;
+            padding: 0;
+            h3{
+                font-size: 33px;
+                
+            }
+            .subtext{
+                font-size: 40px;
+                
+            }
+        }
+    }
+    .elewen{
+        .text{
+            .subtext{
+                font-size: 20px
+            }
+        }
+    }
+    footer{
+        .text{
+            h4{
+                font-size: 20px;
+            }
+            .subtext{
+                font-size: 20px;
+            }
+        }
+        
+    }
+}
+@media (max-width:1441px){
+    .container{
+        width:100%
+    }
+    .main{
+        grid-template-areas: 
+        "zero zero zero zero"
+        "one one two two"
+        "three four five six"
+        "seven seven seven eight"
+        "elewen elewen elewen elewen"
+        "twelve twelve thirteen thirteen";
+    }
+    .twelve{
+        padding: 140px 0 0 0;
+        text-align:center;
+    }
+    .thirteen{
+        padding: 140px 0 0 0;
+        text-align:center;
+    }
+}
+@media (max-width:769px){
+    .main{
+        grid-template-areas: 
+        "zero zero zero zero"
+        "one one two two"
+        "three four five six"
+        "seven seven eight nine"
+        "ten elewen elewen elewen"
+        "twelve twelve thirteen thirteen";
+    }
+    .zero{
+        padding: 250px 150px;
+        background:url(../src/img/logo.png) 150px 80px no-repeat,url(../src/img/blue.png) center no-repeat;
+    }
+    .nine{
+        display: none;
+    }
+}
