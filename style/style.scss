@@ -165,6 +165,7 @@ body{
 .elewen{
     grid-area: elewen;
     background: url(../src/img/earphone.png);
+
     .text{
         padding: 140px 0 0 58px;
         width: 370px;
@@ -191,7 +192,7 @@ body{
             border: 2px solid #2ebd59;
             border-radius: 24.5px;
             background: none;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 32px;
             font-weight: 700;
             text-transform: uppercase;

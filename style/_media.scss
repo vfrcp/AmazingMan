@@ -49,29 +49,130 @@
         "twelve twelve thirteen thirteen";
     }
     .twelve{
-        padding: 140px 0 0 0;
+        padding: 50px 0 0 0;
         text-align:center;
     }
     .thirteen{
-        padding: 140px 0 0 0;
+        padding: 50px 0 0 0;
         text-align:center;
     }
 }
-@media (max-width:769px){
+@media (max-width:980px){
     .main{
+        grid-template-rows: 900px 500px repeat(4,515px) 500px 400px;
         grid-template-areas: 
         "zero zero zero zero"
-        "one one two two"
-        "three four five six"
-        "seven seven eight nine"
-        "ten elewen elewen elewen"
+        "one one one one"
+        "two two three three"
+        "four four five five"
+        "six six eight eight"
+        "seven seven seven seven"
+        "elewen elewen elewen elewen"
         "twelve twelve thirteen thirteen";
     }
     .zero{
         padding: 250px 150px;
         background:url(../src/img/logo.png) 150px 80px no-repeat,url(../src/img/blue.png) center no-repeat;
     }
+    .two{
+        .text{
+            padding: 100px 0 120px 0;
+            width: auto;
+        }
+    }
     .nine{
         display: none;
     }
+    .ten{
+        display: none;
+    }
+    .elewen{
+        .text{
+            width: 50%;
+        }
+    }
+    .twelve{
+        .text{
+            height: 300px;
+        }
+    }
+    .thirteen{
+        .text{
+            height: 300px;
+            .subtext{
+                margin: 0 0 80px 0;
+            }
+        }
+    }
+    footer{
+        .amazing_life{
+
+        }
+        .contact_folow{
+            :first-child{
+                margin-bottom: 45px;
+            }
+            .subtext{
+                margin-bottom: 63px !important;
+            }
+        }
+        .subscribe_sponsor{
+            width: 150px;
+            :first-child{
+                margin-bottom: 45px;
+            }
+            .subtext{
+                margin-bottom: 21px;
+            }
+            .input{
+                margin-bottom: 21px;
+                width: 200px;
+            }
+        }
+    }
+}
+@media (max-width: 750px){
+    .main{
+        grid-template-columns: auto;
+    .seven{
+        padding: 0px;
+        .text{
+            margin: 60px auto;
+        }
+    }
+    }
+    .fourteen{
+        margin-left: 20%;
+        flex-wrap: wrap;
+        .amazing_life{
+            .text{
+                width: 300px;
+            }
+            
+        }
+    }
+    
+}
+@media (max-width:426px){
+    .main{
+        grid-template-columns: auto;
+    }
+    .zero{
+        padding: 150px 100px 100px 100px;
+        .text{
+            h1{
+                width: 400px;
+            }
+            h2{
+                width: 400px;
+            }
+        }
+    }
+    .fourteen{
+        flex-wrap: wrap;
+        margin-left: 250px;
+    }
+}
+@media (max-width: 200px){
+    
 }
